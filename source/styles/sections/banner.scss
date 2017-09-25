@@ -1,0 +1,27 @@
+.banner{
+	min-height: 850px;
+	width: 100%;
+	text-align:left;
+	background: url('../images/banner.png') center/cover no-repeat;
+	background-color: #c1c1c1;
+	display: flex;
+	align-items: center;
+	font-family: $ff-main;
+
+	&__wrapper{
+		width: 40%;
+	}
+
+	&__title{
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.6;
+		color: #000000;
+		padding-bottom: 15px;
+	}
+
+	&__desc{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+}
