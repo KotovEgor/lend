@@ -4,7 +4,8 @@
   "description": "this temlate lend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
   }
 }

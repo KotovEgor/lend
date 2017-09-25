@@ -1,0 +1,52 @@
+.header {
+	position: fixed;
+	padding: 30px 0px;
+	width: 100%;
+
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+
+	&__call{
+		font-size: 18px;
+		font-weight: bold;
+		font-family: $ff-main;
+		color: #000;
+		text-decoration: none;
+		background-image: url(../images/phone.svg);
+		background-repeat: no-repeat;
+		padding: 0px 25px;
+		background-position: left center;
+		cursor: default;
+	}
+
+}
+
+
+.menu {
+	list-style-type: none;
+	
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0px 15px;
+	}
+
+	&__link{
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: $ff-main;
+		color: #000000;
+		font-size: 14px;
+		transition: 0.3s;
+
+		&:hover, &:active, &--active{
+			color: $base-color;
+		}
+
+	}
+}

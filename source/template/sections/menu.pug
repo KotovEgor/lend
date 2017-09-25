@@ -1,0 +1,9 @@
+ul.menu
+	-var items = ['О компании', 'Услуги', 'Цены', 'Галерея', 'Контакты']
+	each item, index in items
+		if index === 0
+			li.menu__item
+				a.menu__link.menu__link--active(href="#")= item
+		else
+			li.menu__item
+				a.menu__link(href="#")= item
