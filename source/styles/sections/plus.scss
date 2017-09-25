@@ -1,0 +1,53 @@
+.plus{
+	padding: 65px 0px 85px;
+	text-align: center;
+	font-family: $ff-main;
+
+	&__title__header{
+		padding-bottom: 10px;
+		font-size: 30px;
+		font-weight: bold;
+		margin: 0px;
+		text-transform: uppercase;
+		line-height: 1.6;
+	}
+
+	&__title__text{
+		font-size: 18px;
+		color: #000000;
+	}
+
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 0px;
+		flex-wrap: wrap;
+		margin: 0px;
+		padding-top: 50px;
+	}
+
+	&__item{
+		width: 30%;
+	}
+
+
+	&__title{
+		padding: 20px 0px;
+		font-size: 30px;
+		font-weight: bold;
+		margin: 0px;
+		text-transform: uppercase;
+		line-height: 1.6;
+	}
+
+	&__img{
+		min-height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__desc{
+		font-size: 18px;
+	}
+}
