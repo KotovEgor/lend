@@ -1,11 +1,17 @@
 @import "../../node_modules/normalize.scss/normalize";
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel";
+@import "../../node_modules/owl.carousel/src/scss/owl.theme.default";
 
 @import "global/vars";
 @import "global/mixins";
 @import "global/fonts";
 @import "global/global";
 @import "global/common";
-@import "sections/header";
 @import "global/button";
+@import "global/slider";
+@import "sections/header";
 @import "sections/banner";
 @import "sections/plus";
+@import "sections/offer";
+@import "sections/services";
+@import "sections/product";

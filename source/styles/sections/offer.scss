@@ -1,0 +1,23 @@
+.offer{
+	padding: 50px 0px;
+	background: url(../images/preim.png) center/cover no-repeat;
+
+
+	&__wrapper{
+		width: 70%;
+		margin: 0px auto;
+		padding: 50px 80px;
+		background: rgba(#fff, 0.7);
+		text-align: center;
+	}
+
+	&__title{
+		margin: 0px;
+		padding: 0px;
+		font-family: $ff-main;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.6;
+		margin-bottom: 10px;
+	}
+}

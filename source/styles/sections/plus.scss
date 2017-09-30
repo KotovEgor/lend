@@ -47,6 +47,12 @@
 		justify-content: center;
 	}
 
+
+	&__svg{
+		width:100px;
+		fill: $base-color;
+	}
+
 	&__desc{
 		font-size: 18px;
 	}

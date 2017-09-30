@@ -1,0 +1,63 @@
+.owl-carousel{
+	text-align: center;
+
+	&__title{
+		font-size: 30px;
+		font-family: $ff-main;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 40px;
+		margin-bottom: 15px;
+	}
+
+
+	&__desc{
+		font-size: 18px;
+		font-family: $ff-main;
+		text-align:center;
+		margin-bottom: 25px;
+	}
+
+	&__price{
+		font-size: 30px;
+		font-family: $ff-main;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	&__svg{
+		width: 35px;
+		fill: $base-color;
+		transition: 0.3s;
+		opacity: 0.6;
+
+		&:hover, &:active{
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+.owl-stage-outer{
+	z-index: 1000;
+}
+
+.owl-nav{
+	position: absolute;
+    top: 50%;
+    margin-top: -17.5px;
+    width: 100%;
+}
+
+.owl-prev{
+	float: left;
+    margin-left: -100px;
+}
+
+.owl-next{
+   margin-right: -100px;
+   float: right;
+ }
