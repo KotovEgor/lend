@@ -1,6 +1,13 @@
 @import "../../node_modules/normalize.scss/normalize";
 @import "../../node_modules/owl.carousel/src/scss/owl.carousel";
 @import "../../node_modules/owl.carousel/src/scss/owl.theme.default";
+@import "../../node_modules/owl.carousel/src/scss/animate.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeIn.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeInUp.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/bounceIn.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/slideInLeft.scss";
+
 
 @import "global/vars";
 @import "global/mixins";
@@ -15,3 +22,6 @@
 @import "sections/offer";
 @import "sections/services";
 @import "sections/product";
+@import "sections/slider";
+@import "sections/map";
+@import "sections/footer";

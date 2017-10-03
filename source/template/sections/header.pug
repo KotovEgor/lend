@@ -2,7 +2,9 @@ header.header
 	.container
 		.header__wrapper
 			.header__logo
-				img(src="images/logo.png", alt="Название компании")
+				a.header__logo__link(href="#")
+					+svg-logo
+					span.header__logo__name ваш логотип
 			.header__menu
 				include menu
 			a.header__call(href="tel:+79999999999") +7(999) 999-99-99

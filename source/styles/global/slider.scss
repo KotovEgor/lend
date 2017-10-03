@@ -40,24 +40,65 @@
 
 
 
-
-.owl-stage-outer{
+.owl__product .owl-stage-outer{
 	z-index: 1000;
 }
 
-.owl-nav{
+.owl__product .owl-nav{
 	position: absolute;
     top: 50%;
     margin-top: -17.5px;
     width: 100%;
 }
 
-.owl-prev{
+.owl__product .owl-prev{
 	float: left;
     margin-left: -100px;
 }
 
-.owl-next{
+.owl__product .owl-next{
    margin-right: -100px;
    float: right;
+ }
+
+
+.owl__slider .owl-nav{
+	position: absolute;
+    top: 50%;
+    margin-top: -17.5px;
+    width: 1170px;
+    left: 50%;
+    margin-left: -585px;
+}
+
+.owl__slider .owl-prev{
+	float: left;
+	padding: 20px 20px 15px 20px;
+	background-color: rgba(#fff, 0.5);
+	transition: 0.3s;
+}
+
+.owl__slider .owl-next{
+   float: right;
+   padding: 20px 20px 15px 20px;
+   background-color: rgba(#fff, 0.5);
+   transition: 0.3s;
+ }
+
+.owl__slider .owl-carousel__svg{
+ 	fill: #000;
+ 	opacity: 1;
+ 	transition: 0.3s;
+ }
+
+
+.owl__slider .owl-prev:hover, .owl__slider .owl-prev:active,
+.owl__slider .owl-next:hover, .owl__slider .owl-next:active 
+{
+ 	background-color: rgba($base-color, 0.5);
+}
+
+.owl__slider .owl-prev:hover svg, .owl__slider .owl-prev:active svg,
+.owl__slider .owl-next:hover svg, .owl__slider .owl-next:active svg{
+ 	fill: #fff;
  }

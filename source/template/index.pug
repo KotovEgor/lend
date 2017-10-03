@@ -3,7 +3,7 @@ html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
-		meta(name="viewport" content="width-device-width")
+		meta(name="viewport" content="width=device-width initial-scale=1")
 		link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico")
 		link(rel="stylesheet" href="css/main.min.css")
 		title Заголовок
@@ -15,7 +15,10 @@ html(lang="ru")
 		include sections/offer.pug
 		include sections/services.pug
 		include sections/product.pug
-
+		include sections/slider.pug
+		include sections/map.pug
+		include sections/footer.pug
+		script(src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU", type="text/javascript")
 		script(src="js/main.min.js")
 
 

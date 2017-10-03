@@ -26,15 +26,18 @@ gulp.watch('build/**/*').on('change', browserSync.reload);
 
 gulp.task('js', function () {
   return gulp.src([
-      'node_modules/jquery/dist/jquery.js',
-      'node_modules/owl.carousel/dist/owl.carousel.js',
-      'source/js/slider.js',
-      'source/js/valid.js',
-      'source/js/main.js'
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/owl.carousel/dist/owl.carousel.js',
+    'source/js/jquery.viewportchecker.js',
+    'source/js/slider.js',
+    'source/js/valid.js',
+    'source/js/map.js',
+    'source/js/main.js'
+      
     ])
-    .pipe(sourcemaps.init())
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
+   .pipe(sourcemaps.init())
+   .pipe(concat('main.min.js'))
+   .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'));
 });
