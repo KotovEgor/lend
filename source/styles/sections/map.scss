@@ -1,8 +1,22 @@
 #map{
 	width: 100%;
 	height: 550px;
+	
+	@media(max-width:767px){
+		display: none;
+	}
 }
 
+
+#map--mobile{
+	display:none;
+	width: 100%;
+	height: 400px;
+
+	@media(max-width:767px){
+		display: block;
+	}
+}
 
 .ymaps-layers-pane {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
@@ -28,14 +42,28 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
 		top: 60px;
 		background-color: rgba(#fff, 0.7);
 		padding: 40px 60px;
-		width: 30%;
+		width: 600px;
+
+	@media (max-width: 900px){
+		top: 25px;
+    	padding: 40px;
+   		width: 500px;
+   	}	
+
+   	@media(max-width:767px){
+		position: inherit;
+		top: 0px;
+		width: 100%;
+		padding: 30px;
+	}
+
 	}
 
 	&__title{
 		font-size: 30px;
 		font-family: $ff-main;
 		font-weight: bold;
-		line-height: 1.6;
+		line-height: 1.2;
 		padding-bottom: 15px;
 		margin: 0px;
 	}
@@ -67,6 +95,10 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
 		background-size: 25px;
 		padding: 25px 50px;
 		font-size: 18px;
+
+	@media(max-width:767px){
+		padding-bottom: 0px;
+	}
 	}
 
 	&__mail__link{
@@ -80,3 +112,8 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
 		cursor: default;
 	}
 }
+
+
+
+
+

@@ -1,12 +1,13 @@
 ul.menu
 	-var items = ['О компании', 'Услуги', 'Цены', 'Галерея', 'Контакты']
+	-var blocs = ['#plus', '#services', '#product', '#slider', '#map']
 	each item, index in items
 		if index === 0
 			li.menu__item
-				a.menu__link.menu__link--active(href="#")= item
+				a.menu__link.menu__link--active(href=blocs[index])= item
 		else
 			li.menu__item
-				a.menu__link(href="#")= item
+				a.menu__link(href=blocs[index])= item
 
 
 

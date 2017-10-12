@@ -1,6 +1,13 @@
 .services{
 	margin: 60px 0px;
 	counter-reset: count;
+	display: flex;
+    flex-direction: column;
+
+    @media (max-width: 767px){
+    	margin: 30px 0px;
+	}
+
 
 	&__item{
 		margin-bottom: 20px;
@@ -8,6 +15,11 @@
     	justify-content: space-between;
     	flex-wrap: wrap;
     	align-items: center;
+
+    	@media (max-width: 1030px){
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 
 	&__header__title{
@@ -54,7 +66,9 @@
 			}
 		}
 		
-
+	@media (max-width: 1220px){
+		padding: 0px 20px 0px 30px;
+	}	
 
 	}
 }

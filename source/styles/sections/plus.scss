@@ -2,6 +2,10 @@
 	padding: 65px 0px 85px;
 	text-align: center;
 	font-family: $ff-main;
+	display: flex;
+	@media(max-width:767px){
+		padding: 30px 20px 35px;
+	}
 
 	&__title__header{
 		padding-bottom: 10px;
@@ -10,11 +14,20 @@
 		margin: 0px;
 		text-transform: uppercase;
 		line-height: 1.6;
+	@media(max-width:767px){
+		font-size: 24px;
+		line-height: 1.2;
 	}
+	}
+
 
 	&__title__text{
 		font-size: 18px;
 		color: #000000;
+		@media(max-width:767px){
+			font-size: 16px;
+			line-height: 1.2;
+		}
 	}
 
 	&__list{
@@ -24,11 +37,20 @@
 		flex-wrap: wrap;
 		margin: 0px;
 		padding-top: 50px;
+		@media(max-width:767px){
+			padding-top: 10px;
+		}
 	}
 
 	&__item{
-		width: 30%;
-	}
+		flex-grow: 1;
+    	flex-shrink: 1;
+    	flex-basis: 320px;
+    	padding: 0px 30px 20px;
+    	@media(max-width:767px){
+			padding: 0px 0px 20px;
+		}
+	}		
 
 
 	&__title{
@@ -38,6 +60,10 @@
 		margin: 0px;
 		text-transform: uppercase;
 		line-height: 1.6;
+		@media(max-width:767px){
+			font-size: 24px;
+			line-height: 1.2;
+		}
 	}
 
 	&__img{
@@ -56,4 +82,7 @@
 	&__desc{
 		font-size: 18px;
 	}
+
+
+
 }

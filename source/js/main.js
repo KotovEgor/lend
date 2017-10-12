@@ -1,27 +1,11 @@
-$('.services__item').viewportChecker({
-	classToAdd: 'animated fadeIn',
-	offset: 0,
-	classToRemove: 'invisible'
+$('.menu a').click( function(){ 
+	var scroll_el = $(this).attr('href');
+	var fixed_offset = 150;
+	if ($(scroll_el).length != 0) { 
+		$('html, body').animate({ scrollTop: $(scroll_el).offset().top - fixed_offset}, 800); 
+	}
+	return false; 
 });
 
 
-$('.banner__wrapper').viewportChecker({
-	classToAdd: 'animated slideInLeft',
-	offset: 0,
-	classToRemove: 'invisible'
-});
-
-
-$('.offer__wrapper').viewportChecker({
-	classToAdd: 'animated bounceIn',
-	offset: 100,
-	classToRemove: 'invisible'
-});
-
-
-$('.plus__item').addClass('hidden').viewportChecker({
-	classToAdd: 'animated fadeInUp',
-	offset: 100,
-	classToRemove: 'invisible'
-});
 

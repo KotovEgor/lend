@@ -1,6 +1,7 @@
 .footer{
-	 background-color: #191919;
-	 padding: 40px 0px;
+	background-color: #191919;
+	padding: 40px 25px;
+   	display: flex;
 
 
 
@@ -9,6 +10,10 @@
 	 	justify-content: space-between;
 	 	flex-wrap: wrap;
 	 	align-items: center;
+
+	@media(max-width:767px){
+		flex-direction: column;
+	}
 	}
 
 	 &__link{
@@ -25,7 +30,7 @@
 
 	
 
-	  &__politika{
+	&__politika{
 	 	 color: #a3a3a3;
 	 	 font-size: 16px;
 	 	 font-family: $ff-main;
@@ -35,14 +40,24 @@
 	 	 &:hover{
 	 	 	color: #fff;
 	 	 }
-	 }
+
+	@media(max-width:767px){
+		padding: 20px 0px;
+	}
+	 
+	}
 
 	 &__logo__name{
 	 	font-size: 24px;
 	 	color: #fff;
 	 	font-weight: bold;
 	 	margin-right: 50px;
-	 }
+
+	@media (max-width:900px){
+		margin-right: 0px;
+	}
+
+	}
 
 	&__logo__link{
 		display: flex;

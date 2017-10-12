@@ -9,15 +9,17 @@ html(lang="ru")
 		title Заголовок
 	body
 		include sections/mixins.pug
-		include sections/header.pug
-		include sections/banner.pug
-		include sections/plus.pug
-		include sections/offer.pug
-		include sections/services.pug
-		include sections/product.pug
-		include sections/slider.pug
-		include sections/map.pug
-		include sections/footer.pug
+		include sections/popup.pug
+		.block__blur
+			include sections/header.pug
+			include sections/banner.pug
+			include sections/plus.pug
+			include sections/offer.pug
+			include sections/services.pug
+			include sections/product.pug
+			include sections/slider.pug
+			include sections/map.pug
+			include sections/footer.pug
 		script(src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU", type="text/javascript")
 		script(src="js/main.min.js")
 
